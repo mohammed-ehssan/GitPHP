@@ -46,51 +46,23 @@
 
 <?php
 if(sizeof($followers) > 0){
-  foreach ($followers as $value)
-   {
+ foreach ($followers as $value){
+	
+ echo "
+ <div class='col-md-3 col-sm-6 mb-4'>
+  <a href='$value->html_url'>
+        <img class='img-fluid' src='$value->avatar_url' alt=''>
+      </a>
+</div>";
+
+}
+}else{
+  echo "<h4>That User Don't Have followers ! </h4>";
+
 }
 ?>
 
-<div class="col-md-3 col-sm-6 mb-4">
-  <a href="<?= $value->html_url?>">
-        <img class="img-fluid" src="<?= $value->avatar_url?>" alt="">
-      </a>
-</div>
 
-<?php }else{
-  echo "<h4>That User Don't Have followers ! </h4>";
-}?>
-
-
-    <!-- <h3 class="my-4">Some Following</h3>
-
-    <div class="row">
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-              <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-              <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-              <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
-      </div>
-
-      <div class="col-md-3 col-sm-6 mb-4">
-        <a href="#">
-              <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-            </a>
-      </div>
-  </div> -->
-  <!-- /.row -->
 
 </div>
 <!-- /.container -->
