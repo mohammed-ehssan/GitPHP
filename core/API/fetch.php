@@ -72,10 +72,3 @@ class Fetch{
 }
 
 
-// 4381ec3a6d@himail.online
-//moj343dde32@emailna.co
-// mohammed1999
-// mohammed1998
-// Mohammed1999
-// Mohammed1998
-// mohammed@@@123
